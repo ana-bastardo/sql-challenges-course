@@ -22,7 +22,7 @@ ORDER BY COUNT(f.title) DESC;
 **Sports**, 74 titles: The most common category.
 
 ## Notes
-- Joined `film` → `film_category` → `category` to connect each film to
+- Joined `film`, `film_category`, `category` to connect each film to
   its category name, since category isn't stored directly on `film`.
 - Used `COUNT(f.title)` rather than `COUNT(*)` to be explicit about
   counting films specifically, though `COUNT(*)` would give the same
